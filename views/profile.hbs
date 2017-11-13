@@ -1,0 +1,73 @@
+<div class="container profile">
+    <h1>Profile</h1>
+    <h5><strong>_id: </strong>{{user._id}}</h5>
+    <hr>
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Local Account</h3>
+                </div>
+                <div class="panel-body">
+                    {{#if user.local.username}}
+                    <ul>
+                        <li><strong>Username: </strong>{{user.local.username}}</li>
+                        <li><strong>Email: </strong>{{user.local.email}}</li>
+                        <li><strong>Password: </strong>{{user.local.password}}</li>
+                    </ul>
+                    <a href="/auth/unlink/local" class="pull-right btn btn-default">Unlink</a>
+                    {{else}}
+                    <a href="/auth/connect/local" class="pull-right btn btn-default">Connect Local</a>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Facebook</h3>
+                </div>
+                <div class="panel-body">
+                    {{#if user.facebook.token}}
+                    <ul>
+                        <li><strong>id: </strong>{{user.facebook.id}}</li>
+                        <li><strong>Name: </strong>{{user.facebook.name}}</li>
+                        <li><strong>Email: </strong>{{user.facebook.email}}</li>
+                        <li><strong>Token: </strong>{{user.facebook.token}}</li>
+                    </ul>
+                    <a href="/auth/unlink/facebook" class="pull-right btn btn-default">Unlink</a>
+                    {{else}}
+                    <a href="/auth/connect/facebook" class="pull-right btn btn-default">Connect Facebook</a>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Google</h3>
+                </div>
+                <div class="panel-body">
+                    {{#if user.google.token}}
+                    <ul>
+                        <li><strong>id: </strong>{{user.google.id}}</li>
+                        <li><strong>Name: </strong>{{user.google.name}}</li>
+                        <li><strong>Email: </strong>{{user.google.email}}</li>
+                        <li><strong>Token: </strong>{{user.google.token}}</li>
+                    </ul>
+                    <a href="/auth/unlink/google" class="pull-right btn btn-default">Unlink</a>
+                    {{else}}
+                    <a href="/auth/connect/google" class="pull-right btn btn-default">Connect Google</a>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
