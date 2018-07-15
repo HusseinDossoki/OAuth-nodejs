@@ -2,9 +2,9 @@
   "name": "oauth-nodejs",
   "version": "1.0.0",
   "description": "A complete OAuth system with nodejs",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "author": "Hussein Dossoki",
   "license": "ISC",
