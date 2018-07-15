@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* CSS reset */
+body,.auth-container div,
+.auth-container dl,
+.auth-container dt,
+.auth-container dd,
+.auth-container ul,
+.auth-container ol,
+.auth-container li,
+.auth-container h1,
+.auth-container h2,
+.auth-container h3,.auth-container h4,.auth-container h5,.auth-container h6,
+.auth-container pre,
+.auth-container form,
+.auth-container fieldset,
+.auth-container input,
+.auth-container textarea,
+.auth-container p,
+.auth-container blockquote,
+.auth-container th,
+.auth-container td { 
+	margin:0;
+	padding:0;
+}
+html,body {
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+.auth-container table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+.auth-container fieldset,img { 
+	border:0;
+}
+.auth-container address,.auth-container caption,.auth-container cite,.auth-container code,
+.auth-container dfn,
+.auth-container th,
+.auth-container var {
+	font-style:normal;
+	font-weight:normal;
+}
+.auth-container ol,.auth-container ul {
+	list-style:none;
+}
+.auth-container caption,.auth-container th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* General Demo Style */
+body{
+	font-family: Cambria, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	background: #fff url(../images/bg.jpg) repeat top left;
+	font-weight: 400;
+	font-size: 15px;
+	color: #1d3c41;
+	overflow-y: auto;
+}
+.auth-container a{
+	color: #333;
+	text-decoration: none;
+}
+.auth-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+}
+.clr{
+	clear: both;
+}
+.auth-container > header{
+	padding: 20px 30px 10px 30px;
+	margin: 0px 20px 10px 20px;
+	position: relative;
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.auth-container > header h1{
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size: 35px;
+	line-height: 35px;
+	position: relative;
+	font-weight: 400;
+	color: rgba(26,89,120,0.9);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    padding: 0px 0px 5px 0px;
+}
+.auth-container > header h1 span{
+	color: #7cbcd6;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
+}
+.auth-container > header h2{
+	font-size: 16px;
+	font-style: italic;
+	color: #2d6277;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.8);
+}
+/* Header Style */
+.auth-container .codrops-top{
+	line-height: 24px;
+	font-size: 11px;
+	background: rgba(255, 255, 255, 0.4);
+	text-transform: uppercase;
+	z-index: 9999;
+	position: relative;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+}
+.auth-container .codrops-top a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #333;
+	text-shadow: 0px 1px 1px #fff;
+	display: block;
+	float: left;
+}
+.auth-container .codrops-top a:hover{
+	background: #fff;
+}
+.auth-container .codrops-top span.right{
+	float: right;
+}
+.auth-container .codrops-top span.right a{
+	float: left;
+	display: block;
+}
+
+.auth-container .codrops-demos{
+	text-align:center;
+	display: block;
+	padding: 14px;
+}
+.auth-container .codrops-demos span{
+	display: inline-block;
+	padding-right: 15px;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+.auth-container .codrops-demos a,
+.auth-container .codrops-demos a.current-demo,
+.auth-container .codrops-demos a.current-demo:hover{
+    display: inline-block;
+	font-style: italic;
+	font-size: 12px;
+	padding: 3px 5px;
+	margin: 0px 3px;
+	font-weight: 800;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.05) inset;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	background: rgba(104,171,194,0.5);
+}
+.auth-container .codrops-demos a:hover{
+	background: #4fa2c4;
+}
+.auth-container .codrops-demos a.current-demo,
+.auth-container .codrops-demos a.current-demo:hover{
+	color: rgba(104,171,194,1);
+	background: rgba(255,255,255,0.9);
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+}
+

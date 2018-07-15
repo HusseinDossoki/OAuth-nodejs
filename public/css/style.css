@@ -1,0 +1,27 @@
+/* Start the navbar */
+.navbar{
+    border-radius: 0;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+/* Start Auth page */
+.auth-container{
+    
+}
+.social-wrapper{
+    text-align: center;
+    margin: 10px auto;
+}
+.social-wrapper a{
+    text-decoration: none;
+    width: 15%;
+    height: 42px;
+    color: #ddd;
+    font-size: 16px;
+}
+
+/* Profile Page */
+.profile{
+    word-wrap: break-word;
+}
